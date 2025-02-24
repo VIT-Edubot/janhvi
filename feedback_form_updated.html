@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+    <div id="feedback-form">
+        <h1>Feedback Form</h1>
+        <p>Please provide your feedback below:</p>
+        
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+            
+            <label>Rate our service:</label>
+            <input type="radio" id="excellent" name="rating" value="excellent">
+            <label for="excellent">Excellent</label>
+            
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+            
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label>
+            
+            <label for="service">Service Type:</label>
+            <select id="service" name="service">
+                <option value="support">Customer Support</option>
+                <option value="product">Product Quality</option>
+                <option value="delivery">Delivery Service</option>
+            </select>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

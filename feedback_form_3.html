@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Feedback Form</h1>
+    </header>
+    <main>
+        <div class="form-container">
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>How satisfied are you with our services?</legend>
+                    <label><input type="radio" name="satisfaction" value="very satisfied"> Very Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="satisfied"> Satisfied</label>
+                    <label><input type="radio" name="satisfaction" value="neutral"> Neutral</label>
+                    <label><input type="radio" name="satisfaction" value="dissatisfied"> Dissatisfied</label>
+                </fieldset>
+
+                <label for="feature">What feature do you use most?</label>
+                <select id="feature" name="feature">
+                    <option value="feature1">Feature 1</option>
+                    <option value="feature2">Feature 2</option>
+                    <option value="feature3">Feature 3</option>
+                </select>
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

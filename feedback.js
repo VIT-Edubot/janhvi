@@ -1,4 +1,3 @@
-// feedback.js
 
 // Declaring variables
 var userName = "";  // Name of the user (String)

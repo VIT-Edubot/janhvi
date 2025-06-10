@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchDarkly Employee Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: #0056b3;
+        }
+        #controls {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+        }
+        .employee-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .employee-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .employee-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .employee-card p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        .status {
+            font-weight: bold;
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+        .status.active {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status.inactive {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .toggle-status-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 0.85em;
+        }
+        .toggle-status-btn:hover {
+            background-color: #0056b3;
+        }
+        .toggle-status-btn:active {
+            background-color: #004085;
+        }
+    </style>
+</head>
+<body>
+    <h1>LaunchDarkly Employee Portal</h1>
+
+    <div id="controls">
+        <button id="showAllBtn">Show All Employees</button>
+        <button id="showActiveBtn">Show Only Active Employees</button>
+        <button id="sortByNameBtn">Sort by Name</button>
+    </div>
+
+    <h2>Employee List</h2>
+    <div id="employee-list" class="employee-list">
+        <p>Loading employee data...</p>
+    </div>
+
+    <script src="employees.js"></script>
+</body>
+</html>
